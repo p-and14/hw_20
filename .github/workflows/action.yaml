@@ -31,6 +31,8 @@ jobs:
           source: "deploy/docker-compose.yaml"
           target: app
           strip_components: 1
+      - name: flake8 check
+        run: flake8 --exclude=venv/
       - name: deploy app
         uses: appleboy/ssh-action@master
         with:

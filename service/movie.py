@@ -10,7 +10,7 @@ class MovieService:
 
     def get_all(self):
         return self.dao.get_all()
-    
+
     def create(self, movie_d):
         return self.dao.create(movie_d)
 
