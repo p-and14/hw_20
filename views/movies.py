@@ -11,6 +11,7 @@ movie_ns = Namespace('movies')
 class MoviesView(Resource):
     def get(self):
         movies = movie_service.get_all()
+        print(movies)
         return MovieSchema(many=True).dump(movies), 200
 
     def post(self):

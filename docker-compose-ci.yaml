@@ -3,4 +3,4 @@ services:
   api:
     image: pand14/hw_26:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
-      - "8000:80"
+      - "80:80"
